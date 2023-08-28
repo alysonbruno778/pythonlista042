@@ -1,15 +1,24 @@
 '''
-3. Fazer um algoritmo que peça um número, e ao final, informe se o número está abaixo de 1000, entre 1000 e
-5000, entre 5001 e 8000, ou acima de 8000.
+4. Fazer um algoritmo que peça um número de 1 a 7, e ao final, informe o dia da semana (por extenso)
+correspondente ao número que foi inserido. Informar também a mensagem “número inválido” quando o
+número inserido não corresponder à um dia da semana.
 '''
 
-num = int(input("Informe um número: "))
+num = int(input("Informe um número de 1 a 7: "))
 
-if ( num < 1000 ):
-    print(f"O número {num} é menor que 1000.")
-elif ( num >= 1000 and num <= 5000 ):
-    print(f"O número {num} está entre 1000 e 5000.")
-elif ( num >= 5000 and num < 8001 ):
-    print(f"O número {num} está entre 5000 e 8000.")
+if (num ==1):
+    print(f"O dia da semana correspondente ao número {num} é: Domingo.")
+elif (num ==2):
+    print(f"O dia da semana correspondente ao número {num} é: Segunda-feira.")
+elif (num ==3):
+    print(f"O dia da semana correspondente ao número {num} é: Terça-feira.")
+elif (num ==4):
+    print(f"O dia da semana correspondente ao número {num} é: Quarta-feira.")
+elif (num == 5 ):
+    print(f"O dia da semana correspondente ao número {num} é: Quinta-feira.")
+elif (num == 6):
+    print(f"O dia da semana correspondente ao número {num} é: Sexta-feira.")
+elif (num == 7):
+    print(f"O dia da semana correspondente ao número {num} é: Sabado.")
 else:
-    print(f"O número {num} é maior que 8000.")
+    print("Número inválido")
